@@ -7,3 +7,5 @@
 .idea_modules/
 *.iml
 target/
+src/main/resources/
+src/test/

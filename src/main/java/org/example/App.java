@@ -17,8 +17,15 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+        stage.setTitle("Client for Socket App");
+        stage.setWidth(800);
+        stage.setHeight(600);
+        stage.setResizable(false);
+        stage.setFullScreen(false);
+
         scene = new Scene(loadFXML("primary"));
         stage.setScene(scene);
+
         stage.show();
     }
 
@@ -34,5 +41,4 @@ public class App extends Application {
     public static void main(String[] args) {
         launch();
     }
-
 }
